@@ -19,7 +19,7 @@ const MultiStepFormProgress = () => {
       Component: () => <div> Your order has been delivered.</div>,
     },
   ];
-  return <Steps StepT={CHECKOUT_STEPS} />;
+  return <Steps steps={CHECKOUT_STEPS} />;
 };
 
 export default MultiStepFormProgress;

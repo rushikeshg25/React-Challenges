@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import MultiStepFormProgress from "./Challenges/multistep-form-progress/Index";
+import GridSelect from "./Challenges/grid-select";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const App = () => {
     {
       path: "/home",
       element: <Home />,
+    },
+    {
+      path: "/grid-select",
+      element: <GridSelect />,
     },
   ]);
 

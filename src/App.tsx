@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import MultiStepFormProgress from "./Challenges/multistep-form-progress/Index";
 import GridSelect from "./Challenges/grid-select";
+import TicTacToe from "./Challenges/tic-tac-toe";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const App = () => {
     {
       path: "/grid-select",
       element: <GridSelect />,
+    },
+    {
+      path: "/tic-tac-toe",
+      element: <TicTacToe />,
     },
   ]);
 

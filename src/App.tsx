@@ -3,12 +3,17 @@ import Home from "./Home";
 import MultiStepFormProgress from "./Challenges/multistep-form-progress/Index";
 import GridSelect from "./Challenges/grid-select";
 import TicTacToe from "./Challenges/tic-tac-toe";
+import Landing from "./Landing";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div className='text-5xl '>Hello world!</div>,
+      element: (
+        <div className='text-5xl '>
+          <Landing />
+        </div>
+      ),
     },
     {
       path: "/multistep-form-progess",
@@ -28,7 +33,11 @@ const App = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  );
 };
 
 export default App;

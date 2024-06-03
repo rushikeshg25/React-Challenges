@@ -4,6 +4,7 @@ import MultiStepFormProgress from "./Challenges/multistep-form-progress/Index";
 import GridSelect from "./Challenges/grid-select";
 import TicTacToe from "./Challenges/tic-tac-toe";
 import Landing from "./Landing";
+import Search from "./Challenges/search";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const App = () => {
     {
       path: "/tic-tac-toe",
       element: <TicTacToe />,
+    },
+    {
+      path: "/search",
+      element: <Search />,
     },
   ]);
 

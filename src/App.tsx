@@ -1,15 +1,15 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Home";
-import MultiStepFormProgress from "./Challenges/multistep-form-progress/Index";
-import GridSelect from "./Challenges/grid-select";
-import TicTacToe from "./Challenges/tic-tac-toe";
-import Landing from "./Landing";
-import Search from "./Challenges/search";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './Home';
+import MultiStepFormProgress from './Challenges/multistep-form-progress/Index';
+import GridSelect from './Challenges/grid-select';
+import TicTacToe from './Challenges/tic-tac-toe';
+import Landing from './Landing';
+import Search from './Challenges/search';
 
 const App = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: (
         <div className='text-5xl '>
           <Landing />
@@ -17,23 +17,27 @@ const App = () => {
       ),
     },
     {
-      path: "/multistep-form-progess",
+      path: '/multistep-form-progess',
       element: <MultiStepFormProgress />,
     },
     {
-      path: "/home",
+      path: '/home',
       element: <Home />,
     },
     {
-      path: "/grid-select",
+      path: '/grid-select',
       element: <GridSelect />,
     },
     {
-      path: "/tic-tac-toe",
+      path: '/tic-tac-toe',
       element: <TicTacToe />,
     },
     {
-      path: "/search",
+      path: '/search',
+      element: <Search />,
+    },
+    {
+      path: '/find-same-colors',
       element: <Search />,
     },
   ]);
